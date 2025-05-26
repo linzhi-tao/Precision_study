@@ -18,8 +18,7 @@ This repository contains MATLAB scripts for conducting second-level DCM analyses
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/dcm-peb-analysis.git
-    cd dcm-peb-analysis
+    git clone https://github.com/linzhi-tao/Precision_study.git
     ```
 
 2. Make sure you have:
