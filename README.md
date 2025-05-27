@@ -6,11 +6,13 @@ This repository contains MATLAB scripts for conducting second-level DCM analyses
 
 ## Contents
 
-- `run_PEB.m`: Runs the second-level PEB analysis and Bayesian model reduction (BMR/BMA), and saves model estimates and figures.
+- `run_PEB.m`: Runs the PEB analysis and Bayesian model reduction (BMR/BMA), and saves model estimates and output figures.
 - `run_LOO.m`: Performs leave-one-out cross-validation for selected connections and saves the results and output figures.
-- `M.mat`: Design matrix used for second-level PEB analysis. Includes a behavioural measure (i.e., high-precision effect).
-- `GCM.mat`: Group-level DCM model file (not included YET due to size constraints).
-- `expected_output/`: Shows example outputs from the running scripts for reference.
+- `M.mat`: Design matrix used for the PEB analysis. Includes a behavioural measure (i.e., high-precision effect).
+- `GCM.mat`: File containing estimated first-level DCMs for each participant, used in the PEB and LOO analyses. (not included due to size constraints).
+  [Download the GCM.mat from OneDrive](https://1drv.ms/u/c/3c6c1c8cf97c7f38/EZo0gcKRhNBOosQTqJFh4-0BsSh54Lvm4sfHkPd9XvfYaw?e=MeaKLi)
+- `expected_output/`: Example outputs for reference.  
+  The estimated `PEB.mat` file is also not included due to size constraints. [Download the PEB.mat from OneDrive](https://1drv.ms/u/c/3c6c1c8cf97c7f38/ERji7LTPI4hBnMkaB_DPgksBITqjNG2xNyeKbg6myCmI8Q?e=LmbAB9)
 
 ---
 
@@ -25,9 +27,13 @@ This repository contains MATLAB scripts for conducting second-level DCM analyses
     - MATLAB (R2020a or later recommended)
     - SPM12 installed and added to your MATLAB path
 
-3. Place `GCM.mat` in the root directory of the repository.
+3. Download the `GCM.mat` file from OneDrive and place it in the root directory of the repository:  
+   [Download GCM.mat](https://1drv.ms/u/c/3c6c1c8cf97c7f38/EZo0gcKRhNBOosQTqJFh4-0BsSh54Lvm4sfHkPd9XvfYaw?e=MeaKLi)
 
-4. Run the scripts in MATLAB:
+4. (Optional) If you want to load the estimated PEB model directly, you can also download `PEB.mat`:  
+   [Download PEB.mat](https://1drv.ms/u/c/3c6c1c8cf97c7f38/ERji7LTPI4hBnMkaB_DPgksBITqjNG2xNyeKbg6myCmI8Q?e=LmbAB9)
+
+5. Run the scripts in MATLAB:
     ```matlab
     run_PEB
     run_LOO
@@ -46,7 +52,6 @@ This repository contains MATLAB scripts for conducting second-level DCM analyses
 
 ### PEB Parameters
 - The PEB is estimated on the B-matrix only (`{'B'}`).
-- Mean-centering is applied to the second column of the design matrix for interpretability.
 
 ### LOO Analysis
 - Targeted connections include:
@@ -59,7 +64,7 @@ This repository contains MATLAB scripts for conducting second-level DCM analyses
 
 ## Output
 
-All output files and plots are saved automatically in the subdirectories:
+All output files and plots are saved in the subdirectories:
 
 - `output_PEB/`: for the PEB model estimates and BMA plots
 - `output_LOO/`: for cross-validation metrics and figures
