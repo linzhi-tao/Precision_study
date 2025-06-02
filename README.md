@@ -1,6 +1,6 @@
 # PEB and LOO Analyses for the precision study 
 
-This repository contains MATLAB scripts for conducting second-level DCM analyses using Parametric Empirical Bayes (PEB) and Leave-One-Out (LOO) cross-validation. The analyses focus on the modulation of specific connections under a high-precision experimental condition.
+This repository contains MATLAB scripts for conducting second-level DCM analyses using Parametric Empirical Bayes (PEB) and Leave-One-Out (LOO) cross-validation. The analyses focus on the modulatory connectivity between the insula, pulvinar, and V1, elicited by a high-precision condition in the experiment.
 
 ---
 
