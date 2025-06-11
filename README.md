@@ -12,28 +12,21 @@ This repository contains MATLAB scripts for conducting second-level DCM analyses
 - `GCM.mat`: File containing estimated first-level DCMs for each participant, used in the PEB and LOO analyses. (not included due to size constraints).
   [Download the GCM.mat from OneDrive](https://1drv.ms/u/c/3c6c1c8cf97c7f38/EZo0gcKRhNBOosQTqJFh4-0BsSh54Lvm4sfHkPd9XvfYaw?e=MeaKLi)
 - `expected_output/`: Example outputs for reference.  
-  The estimated `PEB.mat` file is also not included due to size constraints. [Download the PEB.mat from OneDrive](https://1drv.ms/u/c/3c6c1c8cf97c7f38/ERji7LTPI4hBnMkaB_DPgksBITqjNG2xNyeKbg6myCmI8Q?e=LmbAB9)
 
 ---
 
 ## Getting Started
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/linzhi-tao/Precision_study.git
-    ```
+1. Download run_LOO.m, run_PEB.m, and M.mat, and place them in the same folder.
 
-2. Make sure you have:
+2. Download the `GCM.mat` file from OneDrive and place it in the same folder as the scripts:  
+   [Download GCM.mat](https://1drv.ms/u/c/3c6c1c8cf97c7f38/EZo0gcKRhNBOosQTqJFh4-0BsSh54Lvm4sfHkPd9XvfYaw?e=MeaKLi)
+
+3. Make sure you have:
     - MATLAB (R2020a or later recommended)
     - SPM12 installed and added to your MATLAB path
 
-3. Download the `GCM.mat` file from OneDrive and place it in the root directory of the repository:  
-   [Download GCM.mat](https://1drv.ms/u/c/3c6c1c8cf97c7f38/EZo0gcKRhNBOosQTqJFh4-0BsSh54Lvm4sfHkPd9XvfYaw?e=MeaKLi)
-
-4. (Optional) If you want to load the estimated PEB model directly, you can also download `PEB.mat`:  
-   [Download PEB.mat](https://1drv.ms/u/c/3c6c1c8cf97c7f38/ERji7LTPI4hBnMkaB_DPgksBITqjNG2xNyeKbg6myCmI8Q?e=LmbAB9)
-
-5. Run the scripts in MATLAB:
+4. Run the scripts in MATLAB:
     ```matlab
     run_PEB
     run_LOO
